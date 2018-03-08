@@ -13,3 +13,145 @@
  *= require_tree .
  *= require_self
  */
+ /** {
+   box-sizing: border-box;
+ }*/
+
+ body {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+ }
+
+
+ .content-wrap {
+   width: 100%;
+   background: #FFF;
+ }
+
+ .logo {
+   height: 80px;
+ }
+
+
+
+ /****************************
+ NAVAGATION START
+ ****************************/
+
+
+ .top-nav {
+   display: flex;
+   flex-wrap:wrap;
+   justify-content: space-between;
+   align-items:center;
+ }
+
+ .main-nav {
+   display: flex;
+   flex-wrap:wrap;
+   /*justify-content:space-around;*/
+ }
+
+ .main-nav, .secondary-nav {
+   margin-top: 5px;
+   text-transform: uppercase;
+ }
+
+ .main-nav a, .secondary-nav a {
+   text-align: center;
+   display: block;
+   padding: 10px 15px;
+   text-decoration: none;
+ }
+ .main-nav a {
+   font-size: .95em;
+   color: #3acec2;
+
+ }
+ .main-nav a:hover {
+   color: #093a58;
+ }
+
+ /*******SECONDARY NAV********/
+ .secondary-nav {
+   display: flex;
+   flex-wrap:wrap;
+   justify-content: center;
+   background-color: #34B6E4;
+ }
+ .secondary-nav a {
+   color: #fff;
+ }
+
+ .secondary-nav a:hover {
+   color: #093a58;
+ }
+
+ /****************************
+ NAVAGATION END
+ ****************************/
+
+
+
+ /********************
+ MAIN CONTENT
+ ********************/
+
+ .main-content {
+   display: flex;
+   flex-wrap:wrap;
+   /*flex-grow: 4;*/
+   align-items: stretch;
+   margin-top: 10px;
+ }
+
+ .primary-content{
+   flex-basis: 75%; /*now do media query to arrange side bar order to 2*/
+   padding: 20px;
+ }
+
+ .box {
+   /*border-style: solid;
+   border-color: blue;
+     border-width: 0px 1px 4px 0px;*/
+ }
+
+ .side-bar {
+ border-left: 1px solid grey;
+ min-height: 300px;
+ padding: 20px;
+ }
+
+ /********************
+ MAIN CONTENT END
+ ********************/
+
+ /* Medium screens */
+ @media all and (max-width: 800px) {
+
+
+ }
+
+ /* Small screens */
+ @media all and (max-width: 500px) {
+
+   .top-nav {
+       justify-content: center;
+   }
+ }
+
+
+ /********************
+       FOOTER
+ ********************/
+
+ .main-footer {
+   background: #d9e4ea;
+   padding: 2em 0;
+   margin-top: 30px;
+ }
+
+ /********************
+       FOOTER END
+ ********************/
